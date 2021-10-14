@@ -1,38 +1,97 @@
+/* #FFC069 = yellowish */
+/* #4A403A = blackish */
+/* #A45D5D = redish */
+/* #EFEFEF = whitish */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+  background-color: #efefef;
+  color: #4a403a;
+  font-family: "Fredoka One", cursive;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titleOfApp {
+  color: #c76262;
+  font-size: 3rem;
+  text-shadow: 1.5px 1.5px 1.5px #2a2424;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navBar {
+  background-color: #ffc069;
+  margin: 0;
+  margin-top: -25px;
+  padding: 10px 0px;
+  height: 150px1;
+  -webkit-box-shadow: 0px 1px 5px #8a8181;
+  -moz-box-shadow: 0px 1px 5px #8a8181;
+  box-shadow: 0px 1px 5px #8a8181;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: #ffc069;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 2px #0a0909;
+}
+
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row nowrap;
+  flex-direction: center;
+  justify-content: space-around;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #282c34;
+}
+
+a:hover {
+  color: #a45d5d;
+  text-shadow: 0.25px 0.25px 0.5px #554949;
+}
+
+.form {
+  margin: 75px auto 30px auto;
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  align-items: center;
+  width: 400px;
+  border: 1px solid black;
+  padding: 20px 30px 70px 30px;
+  background-color: #4a403a;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px #3d2121;
+  -moz-box-shadow: 0px 1px 5px #8a8181;
+  box-shadow: 0px 1px 5px #8a8181;
 }
 
-.App-link {
-  color: #61dafb;
+.form input {
+  width: 400px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid rgb(34, 33, 33);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button {
+  width: 405px;
+  height: 45px;
+  margin: 5px;
+  font-size: 1.1rem;
+  background-color: #ffc069;
+  border-radius: 5px;
+}
+
+.finePrintUnderForm:hover {
+  color: #c76262e3;
 }
