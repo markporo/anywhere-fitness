@@ -24,10 +24,8 @@ export default function NavBar() {
                     {/* Only clint sees link for view and selecting all classes */}
                     {(user.client === true) && <li><Link to="/classes">Classes</Link></li>}
 
-
                     {/* Only instructor has createClass */}
                     {(user.instructor === true) && <li><Link to="/createclass">Create a Class</Link></li>}
-
 
                     {/* Have login for Instructor linked via client login form...or all in one page? */}
                     {(isLoggedIn === false) && <li><Link to="/login">Login</Link></li>}
