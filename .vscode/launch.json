@@ -11,10 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/backend_two/api/classes/model.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+            "program": "/Users/charlie/Desktop/Lambda/full_stack/unit_4/anywhere-fitness/backend_two/index.js"
         }
     ]
 }
